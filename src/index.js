@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Conditional from './newcomps/conditionalRendering';
+import Mapper from './newcomps/mapper';
+import Styling from './newcomps/styling';
 import reportWebVitals from './reportWebVitals';
-import FetchData from './comps/fetchdata';
-import Styling from './comps/styling';
-import Conditional from './comps/conditionalrender';
-import ColorPicker from './comps/colorPicker';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ColorPicker />
+    <Mapper />
   </React.StrictMode>
 );
 
@@ -34,3 +33,6 @@ reportWebVitals();
 //Create one input and one div.
 //when a hexcode is entered into the input the background color 
 //of the div should change to the color that is entered in the div
+
+//ASSIGNMENT 4
+//TO DO LIST
