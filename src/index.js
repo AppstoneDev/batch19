@@ -5,6 +5,8 @@ import Conditional from './newcomps/conditionalRendering';
 import Mapper from './newcomps/mapper';
 import Styling from './newcomps/styling';
 import reportWebVitals from './reportWebVitals';
+import Fetcher from './shortcuts/Fetcher';
+import Shortcuts from './shortcuts/shortcuts';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -36,3 +38,8 @@ reportWebVitals();
 
 //ASSIGNMENT 4
 //TO DO LIST
+
+//ASSIGNMENT 5
+//Fetch the list of users from reqres.in list users API. 
+//store the users in a state variable
+//each user should have an option to delete and move
