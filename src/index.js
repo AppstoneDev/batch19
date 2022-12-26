@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Parent from './lifecycle/parent';
 import Conditional from './newcomps/conditionalRendering';
 import Mapper from './newcomps/mapper';
 import Styling from './newcomps/styling';
@@ -11,9 +12,9 @@ import Shortcuts from './shortcuts/shortcuts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Mapper />
-  </React.StrictMode>
+  // <React.StrictMode>
+    <Parent />
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
@@ -43,3 +44,9 @@ reportWebVitals();
 //Fetch the list of users from reqres.in list users API. 
 //store the users in a state variable
 //each user should have an option to delete and move
+
+//ASSIGNMENT 6
+// in the lifecycle folder we have a parent and a child. 
+// When the child is being shown in the screen start a timer.
+// when the child is removed from the screen then stop the timer and 
+// show the total time on the screen.  
