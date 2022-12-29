@@ -1,6 +1,7 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
 
-export default function Mapper() {
+export default function Mapper({props}) {
   const [task, setTask] = useState("");
   const [taskList, setTaskList] = useState([]);
   const [completedList, setCompletedList] = useState([]);
@@ -43,8 +44,11 @@ export default function Mapper() {
     //3. remove that element from task list 
   }
 
+  console.log(props);
+
   return (
     <div>
+      <Link to="styling"><button>Akash</button></Link>
       {/* LAYOUT TO ADD TASK */}
       <input placeholder="enter task" onChange={handleInput} />
       <button onClick={handleClick} >add</button>

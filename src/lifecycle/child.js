@@ -8,6 +8,7 @@ export default function Child() {
   useEffect(() => {
     //API to fetch profile data 
     console.log("child is rendered on the screen");
+    console.log(new Date());
   }, [])
 
   useEffect(() => {
@@ -18,6 +19,7 @@ export default function Child() {
   useEffect(() => {
     //destry all values and variables
     return ()=>{
+      console.log(new Date());
       console.log("child is being removed from screen")
     }
   }, [])

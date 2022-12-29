@@ -12,7 +12,9 @@ export default function Parent() {
         onClick={() => {
           setShowChild(!showChild);
         }}
-      > click me </button>
+      >
+        click me
+      </button>
     </div>
-  )
+  );
 }

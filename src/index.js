@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Parent from './lifecycle/parent';
+import MyRouter from './Navigator/myRouter';
 import Conditional from './newcomps/conditionalRendering';
 import Mapper from './newcomps/mapper';
 import Styling from './newcomps/styling';
@@ -13,7 +14,7 @@ import Shortcuts from './shortcuts/shortcuts';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <Parent />
+    <MyRouter />
   // </React.StrictMode>
 );
 
